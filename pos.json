@@ -1,0 +1,52 @@
+{
+    "snacks": [
+        {
+            "id": 1,
+            "item": "pie station",
+            "unit price": 12.05,
+            "total price": 14.20
+        },
+        {
+            "id": 1,
+            "item": "pie station",
+            "unit price": 12.05,
+            "total price": 14.20
+        },
+        {
+            "id": 1,
+            "item": "pie station",
+            "unit price": 12.05,
+            "total price": 14.20
+        },
+        {
+            "id": 1,
+            "item": "pie station",
+            "unit price": 12.05,
+            "total price": 14.20
+        },
+        {
+            "id": 1,
+            "item": "pie station",
+            "unit price": 12.05,
+            "total price": 14.20
+        },
+        {
+            "id": 1,
+            "item": "pie station",
+            "unit price": 12.05,
+            "total price": 14.20
+        },
+        {
+            "id": 1,
+            "item": "pie station",
+            "unit price": 12.05,
+            "total price": 14.20
+        },
+        {
+            "id": 1,
+            "item": "pie station",
+            "unit price": 12.05,
+            "total price": 14.20
+        }
+    ]
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>POS Project
+
+    </title>
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper1">
+            <div class="cart">
+                <input type="text" id="fname" name="fname" placeholder="enter you orders"><br><br>
+                <table id="roll">
+                    <thead>
+                        <td>item</td>
+                        <td>quantity</td>
+                        <td>unitprice</td>
+                        <td>total price</td>
+                    </thead>
+                    <tbody id="abc"></tbody>
+
+                </table>
+
+            </div>
+            <div class="snacks" id="snacks">
+
+                <a href="#" class="btn btn-info btn-lg" id="up">
+                    <span id="up" class="glyphicon glyphicon-arrow-up"></span> Up
+                </a>
+
+                <button class="add1" id="up1" onclick="orderbasket('streamedbun',210)" totalitems()>streamed
+                    bun</button>
+                <button class="add1" onclick="orderbasket('streamedtimsun',5.99)">streamed timsun</button>
+                <button class="add1" onclick="orderbasket('deepfry',10.50)">deep fry</button>
+                <button class="add1" onclick="orderbasket('chicken',50)">chicken</button>
+                <button class="add1" onclick="orderbasket('mutton',150)">mutton</button>
+                <button class="add1" onclick="orderbasket('fish',200)">fish</button>
+                <button class="add1" onclick="orderbasket('fish gravy',300)">fish dravy</button>
+                <button class="add1" onclick="orderbasket('porridge',240)">porridge</button>
+                <button class="add1" id="goose" onclick="orderbasket('beverage',400)">beverage</button>
+
+                <a href="#" class="btn btn-info btn-lg" id="down">
+                    <span class="glyphicon glyphicon-arrow-down"></span> Down
+                </a>
+
+            </div>
+
+
+            <div class="juices">
+                <div class="grid">
+                    <button class="juice1" id="juice123" onclick="orderbasket('blackcoffee',30)">
+                        <h5>Black Coffee</h5>
+                    </button>
+                    <button class="juice2" id="juice123" onclick="orderbasket('Teablack',40)">
+                        <h4>Tea Black</h4>
+                    </button>
+                    <button class="juice3" id="juice123" onclick="orderbasket('chineasetea',50)">
+                        <h4>chinease tea</h4>
+                    </button>
+                    <button class="juice4" id="juice123" onclick="orderbasket('teatd',60)">
+                        <h4>Tea td</h4>
+                    </button>
+                    <button class="juice5" id="juice123" onclick="orderbasket('tea',10)">
+
+                        <h4>Tea</h4>
+                    </button>
+                    <button class="juice6" id="juice123" onclick="orderbasket('soyamilk',100)">
+
+                        <h4>soyamilk</h4>
+                    </button>
+                    <button class="juice7" id="juice123" onclick="orderbasket('coffeejuice',150)">
+                        <h4>coffee juice</h4>
+                    </button>
+                    <button class="juice8" id="juice123" onclick="orderbasket('coffeemik',25)">
+
+                        <h4>coffee milk</h4>
+                    </button>
+                    <button class="juice9" id="juice123" onclick="orderbasket('coffee',15)">
+
+                        <h4>coffee</h4>
+                    </button>
+                    <button class="juice10" id="juice123" onclick="orderbasket('creamcoffee',40)">
+                        <h4>cream coffee</h4>
+                    </button>
+                    <button class="juice11" id="juice123" onclick="orderbasket('blackwhite',200)">
+
+                        <h4>black&white</h4>
+                    </button>
+                    <button class="juice12" id="juice123" onclick="orderbasket('jelly',300)">
+                        <h4>jelly</h4>
+                    </button>
+                    <!----->
+                    <button class="juice13" id="juice123" onclick="orderbasket('coffee',40)">
+                        <h5>Black Coffee</h5>
+                    </button>
+                    <button class="juice14" id="juice123" onclick="orderbasket('coffee',40)">
+                        <h4>Tea Black</h4>
+                    </button>
+                    <button class="juice15" id="juice123" onclick="orderbasket('coffee',40)">
+                        <h4>chinease tea</h4>
+                    </button>
+                    <button class="juice16" id="juice123" onclick="orderbasket('coffee',40)">
+                        <h4>Tea td</h4>
+                    </button>
+                    <button class="juice17" id="juice123" onclick="orderbasket('coffee',40)">
+
+                        <h4>Tea</h4>
+                    </button>
+                    <button class="juice18" id="juice123" onclick="orderbasket('coffee',40)">
+
+                        <h4>soyamilk</h4>
+                    </button>
+                    <button class="juice19" id="juice123" onclick="orderbasket('coffee',40)">
+                        <h4>coffee juice</h4>
+                    </button>
+                    <button class="juice20" id="juice123" onclick="orderbasket('coffee',40)">
+
+                        <h4>coffee milk</h4>
+                    </button>
+                    <button class="juice21" id="juice123" onclick="orderbasket('coffee',40)">
+
+                        <h4>coffee</h4>
+                    </button>
+                    <button class="juice22" id="juice123" onclick="orderbasket('coffee',40)">
+                        <h4>cream coffee</h4>
+                    </button>
+                    <button class="juice23" id="juice123" onclick="orderbasket('coffee',40)">
+
+                        <h4>black&white</h4>
+                    </button>
+                    <button class="juice24" id="juice123" onclick="orderbasket('coffee',40)">
+                        <h4>jelly</h4>
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="wrapper2">
+            <div class="calcu">
+                <div class="numqua">
+                    <label for="">Item Number:</label>
+                    <input type="text" id="myInputs">
+                    <label for="">Item Quantity:</label>
+                    <input type="text" id="myInputs">
+                    <button class="add1">Add</button>
+                </div>
+                <div class="wrap2col">
+
+                    <div class="tableno">
+                        <button class="add1">Language</button>
+                        <label for="">Table No</label>
+                        <input type="text" id="myInput">
+                        <label for="">No of Cover</label>
+                        <input type="text" id="myInput">
+                    </div>
+                    <div class="numpadbuttons">
+
+                        <div class="numpad">
+                            <button class="add1">1</button>
+                            <button class="add1">2</button>
+                            <button class="add1">3</button>
+                            <button class="add1">4</button>
+                            <button class="add1">5</button>
+                            <button class="add1">6</button>
+                            <button class="add1">7</button>
+                            <button class="add1">8</button>
+                            <button class="add1">9</button>
+                            <button class="add1">0</button>
+                            <button class="add1">.</button>
+                            <button class="add1">-</button>
+                        </div>
+                        <div class="acclear">
+                            <button class="add1" id="btnclear">AC</button>
+                            <button class="add1" onclick="document.getElementById('myInputs').value = ''">Clear</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="billinput">
+                <button class="bill1">New Bill</button>
+                <button class="bill1">Price Amendment</button>
+                <button class="bill1">Bill ME</button>
+                <button class="bill1">$10</button>
+                <button class="bill1">$1</button>
+                <button class="bill1">$50</button>
+                <button class="bill1">$5</button>
+                <button class="bill1">CashBack</button>
+                <button class="bill1">Terminate</button>
+                <button class="bill1">gift voucher</button>
+                <button class="bill2">Cancel</button>
+                <button class="bill2">good ruturn</button>
+                <button class="bill2">print</button>
+                <button class="bill2">restore</button>
+                <button class="bill2">Add</button>
+                <button class="bill2" onclick="pageRedirect()"> Main Menu</button>
+                <button class="bill2">Deleteall</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    let orderarray = [];
+    var getCart = JSON.parse(localStorage.getItem('cart'));
+
+    function findDup(array) {
+        const count = {}
+        let array1 = []
+        array?.forEach(item => {
+            if (count[item.itemname]) {
+                count[item.itemname] += 1
+                return
+            }
+            count[item.itemname] = 1;
+            array1.push(item)
+        })
+
+        let orgArr = []
+
+        array1?.forEach(each => {
+            if (count[each.itemname]) {
+                orgArr.push({ itemnames: each.itemname, quantity: count[each.itemname], price: each.itemprice, total: each.itemprice * count[each.itemname] })
+            }
+        })
+        return orgArr;
+    }
+
+    $(document).ready(function () {
+        $('#btnclear').click(function () {
+            if (confirm("Want to clear?")) {
+                /*Clear all input type="text" box*/
+                $('input[type="text"]').val('');
+            }
+        });
+    });
+    function pageRedirect() {
+        location.href = "menu.html";
+    }
+    function scrollIfNeeded(element, container) {
+        if (element.offsetTop < container.scrollTop) {
+            container.scrollTop = element.offsetTop;
+        } else {
+            const offsetBottom = element.offsetTop + element.offsetHeight;
+            const scrollBottom = container.scrollTop + container.offsetHeight;
+            if (offsetBottom > scrollBottom) {
+                container.scrollTop = offsetBottom - container.offsetHeight;
+            }
+        }
+    }
+
+    document.getElementById('up').addEventListener('click', ev => {
+        ev.preventDefault();
+        scrollIfNeeded(document.getElementById('goose'), document.getElementById('snacks'));
+    });
+    function scrollIfNeeded(element, container) {
+        if (element.offsetTop < container.scrollTop) {
+            container.scrollTop = element.offsetTop;
+        } else {
+            const offsetBottom = element.offsetTop + element.offsetHeight;
+            const scrollBottom = container.scrollTop + container.offsetHeight;
+            if (offsetBottom > scrollBottom) {
+                container.scrollTop = offsetBottom - container.offsetHeight;
+            }
+        }
+    }
+
+    document.getElementById('down').addEventListener('click', ev => {
+        ev.preventDefault();
+        scrollIfNeeded(document.getElementById('up1'), document.getElementById('snacks'));
+    });
+
+
+
+    let orderBasketArr = [];
+
+    function orderbasket(itemname, itemprice) {
+        orderBasketArr.push({ itemprice, itemname });
+        localStorage.setItem("cart", JSON.stringify(orderBasketArr));
+    }
+
+    let tBody = document.getElementById('abc');
+    findDup(getCart).map(each => {
+        tBody.innerHTML += `<tr><td >${each.itemnames}</td><td >${each.quantity}</td><td >${each.price}</td><td >${each.total}</td></tr>`
+    })
+    if (getCart != null) {
+        for (let i = 0; i < getCart.length; i++) {
+            orderBasketArr.push(getCart[i]);
+        }
+    }
+
+
+</script>
+
+</html>

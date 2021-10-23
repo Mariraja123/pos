@@ -1,0 +1,12 @@
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 150px;
+}
+
+#size, #size1, #size2, #size3 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
